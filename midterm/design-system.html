@@ -4,24 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design System Template</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Oi&display=swap" rel="stylesheet"> */
+
     <style>
         /* CSS Reset and Base Styles */
         :root {
             /* Color Palette - 5 Core Colors */
-            --color-primary: #3498db;     /* Vibrant Blue - Main Brand Color */
-            --color-secondary: #2ecc71;   /* Emerald Green - Complementary Action Color */
-            --color-accent: #e74c3c;      /* Passionate Red - Highlight / Warning Color */
-            --color-neutral: #34495e;     /* Deep Slate Gray - Neutral Text and Background */
-            --color-highlight: #f1c40f;   /* Bright Yellow - Accent / Attention Color */
+            --color-primary: #167ebf;     /* Vibrant Blue - Main Brand Color */
+            --color-secondary: #eab712;   /* Emerald Green - Complementary Action Color */
+            --color-accent: #d91616;      /* Passionate Red - Highlight / Warning Color */
+            --color-neutral: #0e2149;     /* Deep Slate Gray - Neutral Text and Background */
+            --color-highlight: #ff6a24;   /* Bright Yellow - Accent / Attention Color */
             
             /* Derived Colors for Flexibility */
-            --color-background: color-mix(in srgb, var(--color-neutral) 10%, white);
-            --color-text-dark: var(--color-neutral);
-            --color-text-light: white;
+            --color-background: color-mix(in srgb, var(--color-neutral) 10%, #fdf0d5);
+            --color-text-dark: #252424;
+            --color-text-light: #fdf0d5;
 
             /* Typography */
-            --font-primary: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-secondary: 'Roboto Mono', monospace;
+
+            @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Oi&display=swap'); 
+
+            .auidowide-regular {
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            --font-primary: "Audiowide", sans-serif;
+            --font-secondary: 'Roboto Mono', monospace;  
 
             /* Spacing System */
             --spacing-xs: 0.25rem;
@@ -157,6 +170,7 @@
             height: 50px;
         }
     </style>
+
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -196,9 +210,9 @@
 
         <section>
             <h2>Typography</h2>
-            <h1>Heading 1 - Space Grotesk</h1>
-            <h2>Heading 2 - Space Grotesk</h2>
-            <h3>Heading 3 - Space Grotesk</h3>
+            <h1>Heading 1 - Audiowide</h1>
+            <h2>Heading 2 - Audiowide</h2>
+            <h3>Heading 3 - Audiowide</h3>
             <p class="body-text">Body Text - Using Space Grotesk with a comfortable line height and readable size.</p>
             <p class="small-text">Small Text - Subtle and understated, perfect for annotations and footnotes.</p>
         </section>
